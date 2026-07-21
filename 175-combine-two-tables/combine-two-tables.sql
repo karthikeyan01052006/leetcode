@@ -4,6 +4,6 @@ SELECT
     p.lastName,
     a.city,
     a.state
-FROM Person p
-LEFT JOIN Address a
-ON p.personId = a.personId;
+FROM  Address a
+RIGHT JOIN Person p
+ON a.personId = p.personId;
